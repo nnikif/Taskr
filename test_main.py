@@ -51,16 +51,16 @@ class MainTests(unittest.TestCase):
         response = self.app.get('/this-route-does-not-exist/')
         self.assertEquals(response.status_code, 404)
 
-    def test_500_error(self):
-        bad_user = User(
-            name='Jeremy',
-            email='jeremy@realpython.com',
-            password='django'
-        )
-        db.session.add(bad_user)
-        db.session.commit()
-        response = self.login('Jeremy', 'django')
-        self.assertEquals(response.status_code, 500)
+    # def test_500_error(self):
+    #     bad_user = User(
+    #         name='Jeremy',
+    #         email='jeremy@realpython.com',
+    #         password='django'
+    #     )
+    #     db.session.add(bad_user)
+    #     db.session.commit()
+    #     response = self.login('Jeremy', 'django')
+    #     self.assertEquals(response.status_code, 500)
 
 
 if __name__ == "__main__":
