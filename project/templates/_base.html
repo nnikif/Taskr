@@ -25,22 +25,17 @@
           <a class="navbar-brand" href="/">FlaskTaskr</a>
         </div>
         <div class="collapse navbar-collapse">
-         <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav">
             {% if not session.logged_in %}
               <li><a href="/register">Signup</a></li>
             {% else %}
               <li><a href="/logout">Signout</a></li>
             {% endif %}
           </ul>
-          {% if session.logged_in %}
-          <ul class="nav navbar-nav navbar-right">
-            <li><a>Welcome, {{ username }}</a></li>
-          </ul>
-          {% endif %}
         </div><!--/.nav-collapse -->
       </div>
     </div>
-
+   
     <div class="container">
       <div class="content">
 
@@ -61,8 +56,7 @@
         <p>&copy; <a href="https://www.realpython.com">Real Python</a></p>
       </div>
     </div><!-- /.container -->
-
-    <!-- scripts -->
+<!-- scripts -->
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </body>
