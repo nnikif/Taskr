@@ -40,3 +40,5 @@
 404 error at 01-06-2017 13:48:23: http://0.0.0.0:5000/user/nikolay 
 404 error at 01-06-2017 13:50:53: http://0.0.0.0:5000/tasks/dflskl 
 404 error at 01-06-2017 13:55:19: http://0.0.0.0:5000/tasks/dflskl 
+404 error at 01-06-2017 14:21:50: http://127.0.0.1:5000/favicon.ico 
+404 error at 01-06-2017 14:21:50: http://localhost:5000/favicon.ico 

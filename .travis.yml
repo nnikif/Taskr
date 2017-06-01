@@ -1,8 +1,12 @@
 language: python
 python:
-
-  - "2.7"
-# command to install dependencies
-install: "pip install -r requirements.txt"
-# command to run tests
+- '2.7'
+install: pip install -r requirements.txt
 script: nosetests
+deploy:
+  provider: heroku
+  api_key:
+    secure: Tv4n78osUbfeRiPsEm2ten+SoQKJjAsMC6BqQc+tIsKzHRJutDNJBZpyOlrtCM4wLMymb85bp1HnKy+0gQST4L7dK9/MXXqq7umb+AH39umTYjaxQsCGgZbJ237IkApeURFBSNSV2wLkFhjyaE6hGYEtutrBpmGtVcTusu095z/HWmg3sb4JEHJfQVMe5cDziW9Y9N0KJw9GT1oG9iQihlhR/F83hG5MyNKS0XUUE1aqzf8+g77QKv+qn+8UhbkmvkZ6sikqnc4tkwx3z+Qk6jnkmKVrZXxi2nyDrQpNnqWRUqjuun/ZyChr2rIYkGkr0etbQX21Li0JW1QJfCCciVipZYeen/xEuNNsUVrpDXRJHgBJ2Iel+hnRCy/u9qqD7Dg1MGTL7VoigyBkIrC7R1Vumx9SCAY+MQdlb/updLihKpnZLFphOvQ5kxeCrypPalyRgFWM0Sjmg9ODv++y6fQOsTiqR5Enzosf8a+SbAeq2QKGZvznVhJo/ITK2XW9Abw4IbUii+lEiWBBrLK7SyGI7cKoCR4zQZ57VOgYO1iKAcy349wASl3/BR/6eYqmThd3pqX1eACMA4k7SYNX2LSYJGXP3iQWXUA6sIJSBJjeW7uKyzhGBTU6Sa/ya1nUAKcHBYq3zhq1JMFogUiEMc5V7nvGgKe+3iwuTpXRFaQ=
+  app: aqueous-mountain-34776
+  on:
+    repo: nnikif/Taskr
